@@ -132,7 +132,7 @@ function LeadForm() {
           </p>
         </div>
         <a
-          href={`https://wa.me/5511999999999?text=Olá Robson, sou ${encodeURIComponent(form.name)} e gostaria de conversar sobre meu projeto.`}
+          href={`https://wa.me/5521969827484?text=Olá Robson, sou ${encodeURIComponent(form.name)} e gostaria de conversar sobre meu projeto.`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm transition-opacity hover:opacity-90"
@@ -256,7 +256,7 @@ function LeadForm() {
           {[
             { key: 'name', label: 'Seu nome *', placeholder: 'Ex: João Silva', type: 'text' },
             { key: 'email', label: 'E-mail', placeholder: 'seuemail@exemplo.com', type: 'email' },
-            { key: 'whatsapp', label: 'WhatsApp', placeholder: '(11) 99999-9999', type: 'tel' },
+            { key: 'whatsapp', label: 'WhatsApp', placeholder: '(21) 99999-9999', type: 'tel' },
           ].map(field => (
             <div key={field.key}>
               <label className="block text-sm font-semibold mb-2" style={{ color: '#c4c4d4' }}>{field.label}</label>
@@ -597,12 +597,12 @@ export default function App() {
           <div className="mt-8 text-center">
             <p className="text-sm mb-3" style={{ color: '#8b8ba0' }}>Prefere falar diretamente?</p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer"
+              <a href="https://wa.me/5521969827484" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all hover:opacity-90"
                 style={{ background: '#00e676', color: '#0a0a0d' }}>
                 <IconWhatsapp /> WhatsApp
               </a>
-              <a href="mailto:contato@rgwebmaster.com"
+              <a href="mailto:suporterbncompany@gmail.com"
                 className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all hover:opacity-90"
                 style={{ background: '#111118', border: '1px solid #1e1e2e', color: '#8b8ba0' }}>
                 ✉ E-mail
