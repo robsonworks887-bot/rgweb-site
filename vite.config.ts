@@ -2,9 +2,11 @@ import { defineConfig, type HtmlTagDescriptor, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-import siteConfiguration from './.figma/make/site.json'
+import siteConfiguration from './.figma/make/site.json' with { type: 'json' }
 
+const projectRoot = path.dirname(fileURLToPath(import.meta.url))
 
 // Vite config — https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -27,7 +29,7 @@ react(),
     ],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, './src'),
+        '@': path.resolve(projectRoot, './src'),
       },
     },
     server: {
@@ -86,11 +88,11 @@ function figmaSiteConfiguration(config: FigmaSiteConfiguration): Plugin {
     return html.replace(`<!-- ${slotName} -->`, content)
   }
 
-  const title = config.title ?? "Figma Make App"
+  const title = config.title ?? "RGWEB Porfólio"
   const description = config.description ?? ''
   const favicon = config.icons?.icon ?? ''
   const socialImage = config.openGraph?.image ?? ''
-  const language = sanitizeHtmlValue(config.language) || 'en'
+  const language = sanitizeHtmlValue(config.language) || 'pt' || 'en' || 'pt-br' 
   const googleAnalyticsId = sanitizeHtmlValue(config.analytics?.googleAnalyticsId)
   const headStart = config.customScripts?.headStart ?? ''
   const headEnd = config.customScripts?.headEnd ?? ''

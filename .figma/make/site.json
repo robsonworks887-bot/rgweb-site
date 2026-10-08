@@ -1,0 +1,26 @@
+{
+  "title": "RGWEB Porfólio",
+  "description": "Portfólio digital de projetos, serviços e experiências em design e desenvolvimento.",
+  "language": "pt-BR",
+  "robots": {
+    "index": true
+  },
+  "icons": {
+    "icon": ""
+  },
+  "openGraph": {
+    "image": ""
+  },
+  "analytics": {
+    "googleAnalyticsId": ""
+  },
+  "customScripts": {
+    "headStart": "",
+    "headEnd": "",
+    "bodyStart": "",
+    "bodyEnd": ""
+  },
+  "accessibility": {
+    "addBypassLinks": false
+  }
+}
