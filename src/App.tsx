@@ -207,7 +207,7 @@ function LeadForm() {
           </div>
 
           <div>
-            <label className="block text-sm font-semibold mb-3" style={{ color: '#c4c4d4' }}>Qual é o seu orçamento estimado?</label>
+            <label className="block text-sm font-semibold mb-3" style={{ color: '#c4c4d4' }}>Vamos fazer um orçamento estimado?</label>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {BUDGETS.map(b => (
                 <button key={b.id} onClick={() => setForm(f => ({ ...f, budget: b.id }))}
