@@ -1,0 +1,9 @@
+/* Aumenta o peso do upload e download atualizado deve ser feito manualmente. */
+/node_modules/*
+
+/* Pode ser construido manualmente offline */
+/dist/*
+
+/* Possívieis váriaveis de ambiente chaves-secretas */
+.env
+.env/*
